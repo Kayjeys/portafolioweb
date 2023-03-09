@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF-edge">
+    <meta name="viewport" content="width-device-width, initial">
+    <title>input</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <header>
+        <h1 align="right">Materia: Programación Web I </h1>
+        <h1 align="left">Carrera Tecnologías de la Información </h1>
+        <h1 align="center">Semestre: Primavera 2023</h1>
+
+        <hr width="100%" size="6px"  noshade color="#FFA500"/>
+            <h2 align="center">Universidad Politecnica de San Luis Potosí    </h2>
+            <hr width="100%" size="6px"  noshade color="#FFA500"/>
+            <h2 align="left">Nombre del(a) alumno: Kevin Amaro  </h2>
+            <h2 align="left">Profesora: MC Imelda Deyanira Hernández Martinez  </h2>
+            <hr width="100%" size="6px"  noshade color="#FFA500"/>
+    </header>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .informacion{
+            background-color: rgba(250, 3, 3, 0);
+
+            display: flex;
+        }
+        .btn-1{
+            clear: both;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+        }
+        .btn-2{
+            clear: both;
+            float: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .btn-3{
+            clear: both;
+            float: right;
+            overflow: hidden;
+            width: 100%;
+        }
+        .nivel2{
+            background-color: rgba(250, 3, 3, 0);
+            display: flex;
+        }
+        .vc-1{
+            margin-top: 25px;
+            clear: both;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+
+        }
+        .vc-2{
+            margin-top: 25px;
+            clear: both;
+            float: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .fact{
+            background-color: rgba(250, 3, 3, 0);
+            display: flex;
+        }
+        .a1{
+            clear: both;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+        }
+        .a2{
+            clear: both;
+            float: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .a3{
+            clear: both;
+            float: right;
+            overflow: hidden;
+            width: 100%;
+        }
+        .nivel3{
+            background-color: rgba(250, 3, 3, 0);
+            display: flex;
+            margin-top: 25px;
+        }
+        .a4{
+            
+            clear: both;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+
+        }
+        .a5{
+            clear: both;
+            float: center;
+            overflow: hidden;
+            width: 100%;
+
+        }
+        .a6{
+            clear: both;
+            float: right;
+            overflow: hidden;
+            width: 100%;
+
+        }
+        .datos{
+            background-color: rgba(250, 3, 3, 0);
+            display: flex;
+        }
+        .b1{
+            clear: both;
+            float: left;
+            overflow: hidden;
+            width: 100%;
+        }
+        .b2{
+            clear: both;
+            float: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        .b3{
+            clear: both;
+            float: right;
+            overflow: hidden;
+            width: 100%;
+        }
+        .b4{
+            clear: both;
+            float: right;
+            overflow: hidden;
+            width: 100%;
+        }
+    </style>
+</head>
+<header>
+    <h1 align="center">TIENDA DE ROPA ONLINE</h1>
+</header>
+<body>
+    <form method="post" action=""></form>
+    <fieldset> 
+        <legend>Informacion del cliente</legend>
+        <div class="informacion">
+
+           <div class="btn-1">
+           <label for="usuario" Nombre class="btn-1"> </label>
+            Nombre:
+            <input type="text" name="nombre"
+            id="nombre" maxlength="35"
+            placeholder="Nombre" size="15"
+            title="nombre"/>
+           </div>
+
+            <div class="btn-2">
+            <label for="paterno" Apellido Paterno> </label>
+            Apellido Paterno:
+            <input type="text" name="paterno"
+            id="paterno" maxlength="35"
+            placeholder="Apellido paterno" size="15"
+            title="Apellido Paterno"/>
+            </div>
+
+            <div class="btn-3">
+            <label for="materno" Apellido Materno> </label>
+            Apellido Materno:
+            <input type="text" name="Materno"
+            id="materno" maxlength="35"
+            placeholder="Apellido materno" size="15"
+            title="Apellido materno"/>
+            </div>
+
+            </div>
+
+        <div class="nivel2">
+            <div class="vc-1">
+            <label for="usuario" nombre de usuario> </label>
+            Nombre de usuario:
+            <input type="text" name="usuario"
+            id="usuario" maxlength="35"
+            placeholder="Usuario" size="15"
+            title="nombre de usuario"/>
+            </div>
+
+            <div class="vc-2">
+                <label for="">Contraseña</label>
+                <input type="password" name="pass" id="pass" 
+                maxlength="15" placeholder="Password" required>
+            </div>
+        </div>
+
+</fieldset>
+
+<fieldset>
+            <legend>Datos de Facturación</legend>
+         <div class="fact">
+            <div class="a1">
+            <label for="calle" Calle> </label>
+                Calle:
+                <input type="text" name="calle"
+                id="calle" maxlength="35"
+                placeholder="Calle" size="15"
+                title="calle"/>
+            </div>
+            <div class="a2">
+                <label for="num" numero> </label>
+                Num:
+                <input type="number" name="num"
+                id="num" maxlength="35"
+                placeholder="Num. Exterior" size="15"
+                title="num"/>
+            </div>
+            <div class="a3">
+                <label for="colonia" Colonia> </label>
+                    Colonia:
+                    <input type="text" name="colonia"
+                    id="colonia" maxlength="35"
+                    placeholder="Colonia" size="15"
+                    title="colonia"/>
+                </div>
+        </div>   
+        <div class="nivel3">
+            <div class="a4">
+                <label for="correo">E-mail</label>
+                <input type="email" name="correo" id="correo"
+                placeholder="E-mail">
+            </div>
+            <div class="a5">
+                <label for="cp" codigo> </label>
+                Codigo Postal:
+                <input type="cp" name="cp"
+                id="cp" maxlength="35"
+                placeholder="C.P." size="15"
+                title="CP"/>
+            </div>
+            <div class="a6">
+                <label for="rfc" rfc> </label>
+                    RFC:
+                    <input type="text" name="rfc"
+                    id="rfc" maxlength="35"
+                    placeholder="RFC" size="15"
+                    title="rfc"/>
+            </div>
+
+
+        </div>    
+</fieldset>
+
+<fieldset>
+
+    <legend>Datos del Articulo Adquirido</legend>
+    <div class="datos">
+        <div class="b1">
+            <label for="tipo" tipo> </label>
+                Tipo:
+            <select name="carrera>
+            <optgroup label="lngenierias">
+            <option selected>Vestido</option>
+            <option>Falda</option>
+            <option>Pantalon</option>
+            <option>Playera</option>
+            <option>Camisa</option>
+            </optgroup>
+            </select>
+        </div>
+        <div class="b2">
+            <label for="tipo" tipo> </label>
+                Talla: <br>
+            <label for="CHICO" CHICO> </label>
+            Chico
+            <input name="casilla1" type="checkbox" value="Chico"><br>
+            <label for="mediano" mediano> </label>
+            Mediano
+            <input name="casilla2" type="checkbox" value="Mediano"><br>
+            <label for="grande" grande> </label>
+            Grande
+            <input name="casilla3" type="checkbox" value="Grande">
+        </div>
+        <div class="b3">
+            <label for="colores">selecciona un color</label>
+            <input type="color" name="colores" id="colores"/>
+        </div>
+
+        <div class="b4">
+            <input type="reset" name="borrar" id="borrar"
+        value="Borrar Formulario"/><br>
+        <input type="submit" name="enivar"
+        id="enviar" value="enviar formulario"/>
+        </div>
+
+    </div>
+</fieldset>
+    <h3 align="right"><b>©Distribuidora de ropa en linea 2023</b></h3>
+
+
+
+
+
+
+
+</body>
