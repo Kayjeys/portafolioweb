@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="images/logo.png"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>CONCATENACIONESESES</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <script>
+        function concatenar() {   
+        var nom = document.getElementById("nombre").value;
+        var cuatro = nom.charAt(0);  
+
+        var app = document.getElementById("app").value;
+        var uno = app.charAt(0);  
+        var dos = app.charAt(1);
+        
+        var apm = document.getElementById("apm").value;
+        var tres = apm.charAt(0); 
+        
+        var ano = document.getElementById("ano").value;
+        var cinco = ano.charAt(2); 
+        var seis = ano.charAt(3); 
+
+        var siete = document.getElementById("mes").value;
+        var ocho = document.getElementById("dia").value;
+
+    
+        var concatenar=uno+dos+tres+cuatro+cinco+seis+siete+ocho; 
+        text= concatenar;  
+        text = text.toUpperCase();
+        document.getElementById("resultado").innerHTML=text;  
+
+    }  
+    </script>
+    <body>
+        <div class="padre">
+            <div class="cuadro">
+                    <p class="titili">Escribe tu nombre</p>
+                    <div class="inputi">
+                    <input id="nombre" class="inputext" type="text" placeholder="Inserte su Nombre" name="nombre" value=""/>
+                    </div>
+                    <p class="titili">Escribe tu Apellido Paterno</p>
+                    <div class="inputi">
+                    <input id="app" class="inputext" type="text" placeholder="Inserte su Apellido Paterno" name="app" value=""/>
+                    </div>
+                    <p class="titili">Escribe tu Apellido Materno</p>
+                    <div class="inputi">
+                    <input id="apm" class="inputext" type="text" placeholder="Inserte su Apellido Materno" name="apm" value=""/>
+                    </div>
+                    <p class="titili">Escribe tu Año de Nacimiento</p>
+                    <div class="inputi">
+                    <input id="ano" class="inputext" type="number" placeholder="Inserte su Año de Nacimiento" name="ano" value=""/>
+                    </div>
+                    <p class="titili">Escribe tu Mes de Nacimiento</p>
+                    <div class="inputi">
+                    <input id="mes" class="inputext" type="number" placeholder="Inserte su Mes de Nacimiento" name="mes" value=""/>
+                    </div>
+                    <p class="titili">Escribe tu día de Nacimiento</p>
+                    <div class="inputi">
+                    <input id="dia" class="inputext" type="number" placeholder="Inserte día de Nacimiento" name="dia" value=""/>
+                    </div>
+                    <div class="botones">
+                    <h2 class="texto1">Resultado</h2> <p class="resultado" id="resultado"></p>
+                    <button type="button" onclick="concatenar()">Concatenar</button>
+                    </div>
+                    </div>
+                    <h1>AMARO PEREA KEVIN JAFET</h1>
+                    
+            </div>
+        </div>
+    </body>
+</html>    
