@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .secciones{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cuadro{
+            background-color: rgb(243, 240, 236);
+            box-shadow: 2px 2px 10px black;
+            width: 900px;
+            height: 1000px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+        .botones{
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin: 10px;
+        }
+
+    
+    </style>
+<body>
+
+    <p class="title">API HISTORY</p>
+    <div class="secciones">
+        <div class="cuadro">
+            <h3>Que es API HISTORY</h3>
+            <p class="importancia">El objeto DOM window proporciona acceso al historial del navegador a través del objeto history . Este da acceso a métodos y propiedades útiles que permiten avanzar y retroceder a través del historial del usuario, así como --a partir de HTML5-- manipular el contenido del historial.</p>
+            <br>
+            <h3>Viajando a través del historial</h3>
+            <p class="importancia">Retroceder y avanzar a través del historial del usuario utilizando los métodos back(), forward() y go().</p>
+            <br>
+            <h3>importancia</h3>
+            <p class="importancia">La importancia de este comando seria para un uso de facilitacion para la navegacion en las paginas, y el uso sobre nuestra pagina seria como regresar al INDEX o o regesar donde estabamos una vez ya estando ahi, un simple uso del boton regresar y volver</p>
+            <br>
+            <div class="botones">
+                <div>    
+                    <h2>back() Method</h2>
+                    <button onclick="history.back()">Go back</button>
+                    <p>Esta regresa a la pagina anterior, si no existe no lo hara</p>
+                </div> 
+                <div>    
+                    <h2>forward() Method</h2>
+                    <button onclick="history.forward()">forward</button>
+                    <p>Esta volvera a la pagina, si no hubo una pagina abierta previamente no lo hara</p>
+                </div> 
+                <div>    
+                    <h2>go(-2) Method</h2>
+                    <button onclick="history.go(-2)">Go back</button>
+                    <p>Esta retrocedera en el historial hasta la antepenultima pagina abierta, si no hay mas no lo hara</p>
+                </div> 
+            </div>    
+        </div>
+        
+    </div>
+
+
+
+</html>
