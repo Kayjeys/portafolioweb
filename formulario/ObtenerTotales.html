@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+</head>
+<script>
+var total;
+function califica() /*Creamos la funcion*/
+    {var total=0; /*declaramos un contador*/
+    	for (var x=1;x<=4;x++) /*un for que revisa cada una de nuetros inputs radios*/
+    	{
+        var res=0; /*un contador*/
+        var nom="r"+x; /*la variable nom toma el valor de r+x*/
+        var resul=document.getElementsByName(nom); /*resul toma el elemento nom*/
+        for(var i=0;i<resul.length;i++) /*run for que va de i hasta longitud de resul*/
+        {
+            if(resul[i].checked==true) /*condicional de que si esta en verdadero*/
+                res=parseInt(resul[i].value); /*res tomara el valor en entero de resul*/
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos"; /*concatena total mas los puntos*/
+        }
+        if(total==20)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!"; /*condicionales*/
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=15)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+    }
+
+ 
+</script>
+
+<body>
+    <div id="contiene">
+	<h1>Responde la encuesta</h1>
+	<h2>Tu opinión es importante</h2>
+<form>
+<div class="cuadro">
+	<div class="secciones">
+	<ul>
+
+		<li>Cuantos Planetas hay en el sistema solar??</li>
+		<input type="radio" name="r1" id="r1" value="5"/>8 PLANETAS<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>4 PLANETAS<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>3 PLANETAS<br/>
+		<input type="radio" name="r1" id="r1" value="0"/>5 PLANETAS<br/>
+		
+		<li>Cual planeta es el mas caliente??</li>
+		<input type="radio" name="r2" id="r2" value="0"/>VENUS<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>MARTE<br/>
+		<input type="radio" name="r2" id="r2" value="5"/>MERCURIO<br/>
+		<input type="radio" name="r2" id="r2" value="0"/>NEPTUNO<br/>
+
+		<li>Cual es el planeta mas frio??</li>
+		<input type="radio" name="r3" id="r3" value="0"/>JUPITER<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>SATURNO<br/>
+		<input type="radio" name="r3" id="r3" value="5"/>URANO<br/>
+		<input type="radio" name="r3" id="r3" value="0"/>NEPTUNO<br/>
+
+        <li>Cual de estos es una estrella de nuesro sistema solar??</li>
+		<input type="radio" name="r4" id="r4" value="0"/>TON-618<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>AKAMARU-167<br/>
+		<input type="radio" name="r4" id="r4" value="5"/>SOL<br/>
+		<input type="radio" name="r4" id="r4" value="0"/>LUNA<br/>
+	</ul>
+	</div>
+</div>
+<input type="button" value="Calificar" onclick="califica()"> 
+</form>
+<p></p>
+<p id="total">   </p>
+<p id="comentario">   </p>
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>
