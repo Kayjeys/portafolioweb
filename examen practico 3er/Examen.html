@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+</head>
+
+<script>
+
+function fecha(){
+    var fecha = document.getElementsByClassName("fechita").valueAsNumber;
+    text=fecha;
+    document.getElementById("resultado").innerHTML=text;  
+}
+
+
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap');
+
+    body {
+        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cuadro {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 5px 5px 10px black;
+        border: none;
+        width: 400px;
+        height: 800px auto;
+    }
+
+    .titulo1{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .inputi{
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+    
+    .inputi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px auto;
+        margin: 10px;
+    }
+
+    .nom{
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px auto;
+    }
+
+    .resul{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        width: 300px;
+        height: 50px;
+        background-color: rgb(210, 109, 210);
+        border: none;
+        box-shadow: 5px 5px 10px purple;
+        transition: 0.1s;
+        color: white;
+        font-size: 15px;
+    }
+
+    button:hover{
+        transform: scale(1.02);
+        background-color: rgb(194, 66, 194);
+    }
+</style>
+
+<body>
+
+    <div class="contenedor">
+        <div class="cuadro">
+            <div class="titulo"><p class="titulo1">Obtén un Descuento Extra!</p></div>
+            <div class="nom">
+                Tu nombre:
+                <div class="inputi">
+                    <input type="text" placeholder="Nombre de Usuario" value="">
+                </div>
+            </div>
+            <div class="date">
+                Tu Fecha de Nacimiento:
+                <div class="fecha">
+                    <input class="fechita" required pattern="" type="date" value="">
+                </div>
+            </div>
+            <div class="resul">
+                <button type="button" onclick="fecha()">Enviar Formulario</button>
+                <h2 class="texto1">Resultado</h2> <p class="resultado" id="resultado"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>    
+
+</html>
