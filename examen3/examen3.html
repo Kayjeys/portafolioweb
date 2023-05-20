@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="text/javascript" src="examen.js"></script>
+    <link rel="stylesheet" href="examen.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="cuadro">
+            <div class="titulo"><p class="titulo1">Obtén un Descuento Extra!</p></div>
+            <div class="nom">
+                Tu nombre:
+                <div class="inputi">
+                    <input type="text"  id="nombre" name="nombre" placeholder="Nombre de Usuario" value="">
+                </div>
+            </div>
+            <div class="date">
+                Tu Fecha de Nacimiento:
+                <div class="fecha">
+                    <input class="fechita" id="cumple" name="cumple" type="date" value="">
+                </div>
+            </div>
+            <div class="resul">
+                <button type="button" class="boton" onclick="verificarCumple()">Enviar Formulario</button>
+            </div>
+            <div id="resultado" ></div>
+
+        </div>
+
+    </div>
+
+</body>    
+
+</html>
